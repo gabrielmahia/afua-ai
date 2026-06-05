@@ -9,4 +9,4 @@ Emotional support, wellness resources, and stigma reduction — in Swahili.
 - 🤝 Stigma reduction in Swahili context
 **Not a replacement for professional care. Always refer to qualified practitioners.**
 ---
-*gabrielmahia.ai | CC BY-NC-ND 4.0*
+*gabrielmahia.github.io | MIT License*
