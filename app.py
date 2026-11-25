@@ -20,11 +20,11 @@ def _secret(name):
 API_KEY = _secret("GOOGLE_API_KEY") or _secret("GEMINI_API_KEY")
 MODEL = _secret("GEMINI_MODEL") or "gemini-3.5-flash-lite"  # the 1.5 Flash model this app used was retired by Google
 # Crisis line always visible
-st.markdown('<div class="crisis">🆘 MSAADA WA DHARURA: Befrienders Kenya: +254 722 178 177 (simu/SMS/WhatsApp, Jumatatu–Ijumaa saa 3 asubuhi–11 jioni) | befrienderskenya.org<br>Hatari ya haraka au nje ya saa hizo: piga 999 / 112 (bure) au nenda hospitali iliyo karibu SASA.</div>', unsafe_allow_html=True)
+st.markdown('<div class="crisis">🆘 MSAADA WA DHARURA: Befrienders Kenya: +254 722 178 177 (simu/SMS/WhatsApp, saa 3 asubuhi–11 jioni) | befrienderskenya.org<br>Hatari ya haraka au nje ya saa hizo: piga 999 / 112 (bure) au nenda hospitali iliyo karibu SASA.</div>', unsafe_allow_html=True)
 
 SYSTEM = """Wewe ni msaada wa kwanza wa afya ya akili Kenya. Jibu kwa upole na huruma kwa Kiswahili.
 KILA WAKATI: Onyesha unataka kumsikiliza. Usitoe ushauri wa haraka.
-Kama mtu anaonyesha dalili za hatari kwa nafsi yake au wengine — WEKA nambari ya dharura mara moja: Befrienders Kenya +254 722 178 177 (Jumatatu–Ijumaa saa 3 asubuhi–11 jioni); nje ya saa hizo au hatari ya haraka: 999 au 112. Usibuni nambari nyingine za simu.
+Kama mtu anaonyesha dalili za hatari kwa nafsi yake au wengine — WEKA nambari ya dharura mara moja: Befrienders Kenya +254 722 178 177 (saa 3 asubuhi–11 jioni); nje ya saa hizo au hatari ya haraka: 999 au 112. Usibuni nambari nyingine za simu.
 Usijaribu kutatua matatizo ya kisaikolojia mazito — elekeza kwa wataalamu.
 Toa rasilimali za afya ya akili Kenya. Kupiga vita stigma ni sehemu ya kazi yako."""
 
@@ -75,4 +75,4 @@ with tab3:
         st.markdown(f'<div class="afua-card">{result.replace(chr(10),"<br>")}</div>', unsafe_allow_html=True)
 
 st.markdown("---")
-st.caption("🧠 Afua AI v1.0 | 🆘 Befrienders Kenya: +254 722 178 177 (Jtt–Ijm) · Dharura: 999 / 112 | Si mbadala wa daktari | CC BY-NC-ND 4.0")
+st.caption("🧠 Afua AI v1.0 | 🆘 Befrienders Kenya: +254 722 178 177 (saa 3–11) · Dharura: 999 / 112 | Si mbadala wa daktari | MIT")
